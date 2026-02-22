@@ -1,0 +1,42 @@
+.game-panel {
+  background: var(--surface-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.08);
+  display: grid;
+  gap: var(--space-md);
+}
+
+.game-panel h2 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.game-panel p {
+  margin: 0;
+}
+
+.game-panel__status {
+  display: grid;
+  gap: 6px;
+}
+
+.game-panel__actions {
+  display: grid;
+  gap: 8px;
+}
+
+.game-panel__actions button {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 600;
+  background: #111827;
+  color: #f9fafb;
+  cursor: pointer;
+}
+
+.game-panel__actions button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

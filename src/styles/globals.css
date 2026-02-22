@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+}
+
+.app__layout {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .app__layout {
+    grid-template-columns: auto 280px;
+    align-items: start;
+  }
+}

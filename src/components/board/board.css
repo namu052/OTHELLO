@@ -1,0 +1,53 @@
+.board {
+  width: min(88vw, 520px);
+  aspect-ratio: 1 / 1;
+  background: var(--board-color);
+  border: 4px solid var(--line-color);
+  border-radius: var(--radius-md);
+  padding: 6px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 4px;
+}
+
+.cell {
+  position: relative;
+  border: 1px solid var(--line-color);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.15s ease;
+}
+
+.cell:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.cell--valid {
+  outline: 1px dashed rgba(255, 255, 255, 0.7);
+}
+
+.cell__hint {
+  width: 22%;
+  height: 22%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.stone {
+  width: 72%;
+  height: 72%;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.2), 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.stone--black {
+  background: radial-gradient(circle at 30% 30%, #4b5563, #111827 70%);
+}
+
+.stone--white {
+  background: radial-gradient(circle at 30% 30%, #ffffff, #d1d5db 70%);
+}

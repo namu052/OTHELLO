@@ -1,0 +1,12 @@
+:root {
+  --bg-color: #f6f8fb;
+  --surface-color: #ffffff;
+  --text-color: #1f2937;
+  --board-color: #1f7a4c;
+  --line-color: #165f3b;
+  --accent-color: #d97706;
+  --radius-md: 12px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+}
